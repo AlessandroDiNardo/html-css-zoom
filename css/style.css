@@ -1,26 +1,249 @@
+/* COMANDI GENERALI */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+button :hover{
+    cursor: pointer;
+}
+
+i{
+    color: white;
+}
+
+/* HEADER */
 .topbar{
     display: flex;
     justify-content: flex-end;
-    height: 80px;
-    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(36, 33, 33);
     color: white;
 }
 
 .button{
     display: flex;
     align-items: center;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 10px 10px;
+}
+
+.button > button{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
 }
 
 .top-commands{
-    padding: 10px;
+    padding: 7px;
     font-size: 15px;
+    gap: 15px;
+    margin: 10px 10px
+}
+
+.top-commands :last-child{
+    color: white;
+}
+
+/* MAIN */
+main{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    
+}
+
+.main-part{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: calc(100vh - 100px);
+}
+
+.cards{
+    position: relative;
+    margin-top: 60px;
+    gap: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.cards-img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.cards-info{
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    top: 160px;
+    left: 5px;
+    font-size: 15px;
+}
+
+.mic-main{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(104, 102, 102)
+}
+
+.username{
+    background-color: rgb(104, 102, 102);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(36, 33, 33);
+    color: white;
+}
+.bottom-button{
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* left */
+.mic-video{
+    display: flex;
+    min-width: 200px;
+    min-height: 100px;
+    align-items: center;
+    margin-left: 10px;
+    gap: 20px;
+}
+
+.arrow{
+    font-size: 15px;
+    background: none;
+    border: none;
+    background: none;
+    border: none;
+}
+
+.text-bottom{
+    margin-top: 15px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#video{
+    background: none;
+    border: none;
+    font-size: 30px;
+    
+}
+
+#mic{
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+/* center */
+.mid-btm-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.inv{
+    background: none;
+    border: none;
+    font-size: 30px;  
+}
+
+.inv :last-child{
+    margin-left: 2px;
+}
+
+.mng{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.mng :last-child{
+    margin-left: 25px;
+}
+
+.polling{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.polling :last-child{
+    margin-left: 7px;
+}
+
+.share{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.share :last-child{
+    color: rgb(0, 255, 21);
+    margin-left: 15px;
+}
+
+.chat{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.record{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.record :last-child{
+    margin-left: 8px;
+}
+
+.room{
+    background: none;
+    border: none;
+    font-size: 30px; 
+}
+
+.room :last-child{
+    margin-left: 35px;
+}
+
+.more{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.more :last-child{
+    margin-left: 2px
+}
+
+
+/* right */
+.end-meeting{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
 }
